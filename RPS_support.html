@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>石头剪刀布 for Watch Support</title>
-  <meta name="description" content="石头剪刀布 for Watch technical support and help center." />
+  <title>Support | Rock Paper Scissors for Watch</title>
+  <meta name="description" content="Support page for Rock Paper Scissors for Watch." />
   <style>
     :root {
       --bg: #f6f4ef;
       --card: #ffffff;
       --text: #1f1f1f;
       --muted: #666;
-      --accent: #111;
       --border: rgba(0,0,0,.08);
+      --accent: #111;
     }
     * { box-sizing: border-box; }
     body {
@@ -20,7 +20,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
       background: linear-gradient(180deg, #faf8f4 0%, #f2efe8 100%);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
     }
     .wrap {
       max-width: 860px;
@@ -44,25 +44,19 @@
       color: var(--muted);
       font-size: 16px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 22px;
+      margin-top: 16px;
     }
     h2 {
       margin: 0 0 10px;
       font-size: 20px;
     }
-    ul {
-      margin: 0;
-      padding-left: 20px;
+    p {
+      margin: 0 0 12px;
     }
     a { color: var(--accent); }
     .footer {
@@ -71,7 +65,6 @@
       font-size: 14px;
     }
     @media (max-width: 720px) {
-      .grid { grid-template-columns: 1fr; }
       .hero { padding: 24px; }
       h1 { font-size: 28px; }
     }
@@ -80,47 +73,43 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <h1>石头剪刀布 for Watch Support</h1>
-      <p class="sub">Rock Paper Scissors for Watch 技术支持</p>
+      <h1>Support / 技术支持</h1>
+      <p class="sub">If you need help, please contact us by email.</p>
+    </section>
+
+    <section class="card">
+      <h2>English</h2>
       <p>
-        如果你在使用过程中遇到问题，或者想反馈建议，可以通过下面的方式联系我们。
+        For questions, bug reports, or feedback about Rock Paper Scissors for Watch, contact:
+      </p>
+      <p>
+        <a href="mailto:sherryzhang731713@gmail.com">sherryzhang731713@gmail.com</a>
+      </p>
+      <p>
+        Please include your device model, watchOS version, and a short description of the issue.<br />
+        If possible, attach a screenshot or screen recording.
       </p>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>联系支持</h2>
-        <p>
-          Email: <a href="mailto:support@example.com">support@example.com</a>
-        </p>
-        <p>
-          发邮件时建议附上设备型号、watchOS 版本和问题描述，方便我们排查。
-        </p>
-      </div>
+    <section class="card">
+      <h2>简体中文</h2>
+      <p>
+        如果你在使用《石头剪刀布 for Watch》时遇到问题，或者想提供建议，请通过以下邮箱联系我们：
+      </p>
+      <p>
+        <a href="mailto:sherryzhang731713@gmail.com">sherryzhang731713@gmail.com</a>
+      </p>
+      <p>
+        请尽量附上设备型号、watchOS 版本和问题描述。<br />
+        如果方便，也可以附上截图或录屏。
+      </p>
+    </section>
 
-      <div class="card">
-        <h2>常见问题</h2>
-        <ul>
-          <li>如果无法甩手出拳，请确认手表已允许运动传感器权限。</li>
-          <li>统计数据保存在本地，清除数据后无法恢复。</li>
-          <li>智能出拳需要在设置中开启。</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>隐私政策</h2>
-        <p>
-          Privacy policy:
-          <a href="privacy.html">privacy.html</a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>关于</h2>
-        <p>
-          石头剪刀布 for Watch 支持甩手或点击出拳，并提供本地统计和智能出拳功能。
-        </p>
-      </div>
+    <section class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        <a href="RPS_privacy.html">RPS_privacy.html</a>
+      </p>
     </section>
 
     <p class="footer">© 2026 Rock Paper Scissors for Watch</p>
