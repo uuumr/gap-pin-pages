@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>石头剪刀布 for Watch Support</title>
+  <meta name="description" content="石头剪刀布 for Watch technical support and help center." />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666;
+      --accent: #111;
+      --border: rgba(0,0,0,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #faf8f4 0%, #f2efe8 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+    .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    a { color: var(--accent); }
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 24px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>石头剪刀布 for Watch Support</h1>
+      <p class="sub">Rock Paper Scissors for Watch 技术支持</p>
+      <p>
+        如果你在使用过程中遇到问题，或者想反馈建议，可以通过下面的方式联系我们。
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>联系支持</h2>
+        <p>
+          Email: <a href="mailto:support@example.com">support@example.com</a>
+        </p>
+        <p>
+          发邮件时建议附上设备型号、watchOS 版本和问题描述，方便我们排查。
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>常见问题</h2>
+        <ul>
+          <li>如果无法甩手出拳，请确认手表已允许运动传感器权限。</li>
+          <li>统计数据保存在本地，清除数据后无法恢复。</li>
+          <li>智能出拳需要在设置中开启。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>隐私政策</h2>
+        <p>
+          Privacy policy:
+          <a href="privacy.html">privacy.html</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>关于</h2>
+        <p>
+          石头剪刀布 for Watch 支持甩手或点击出拳，并提供本地统计和智能出拳功能。
+        </p>
+      </div>
+    </section>
+
+    <p class="footer">© 2026 Rock Paper Scissors for Watch</p>
+  </main>
+</body>
+</html>
