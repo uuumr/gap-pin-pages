@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>技术支持 / Support - 绿植日记 Leaf Diary</title>
+    <meta name="description" content="绿植日记技术支持页面 / Leaf Diary Support" />
+    <style>
+      :root {
+        --bg: #f6faf3;
+        --card: #ffffff;
+        --text: #1d1d1f;
+        --muted: #68686d;
+        --border: rgba(0, 0, 0, 0.08);
+        --accent: #2e6b3f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #fbfdf8 0%, #eef4e8 100%);
+        color: var(--text);
+        line-height: 1.72;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 44px 20px 72px;
+      }
+      .hero,
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      }
+      .hero {
+        padding: 30px 28px;
+        margin-bottom: 16px;
+      }
+      .card {
+        padding: 24px;
+        margin-bottom: 14px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 34px;
+        line-height: 1.18;
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.25;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 8px 0 0 22px;
+        padding: 0;
+      }
+      li {
+        margin: 0 0 8px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .label {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .lang {
+        display: grid;
+        gap: 18px;
+      }
+      .block + .block {
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+      .contact {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .faq {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        background: #fbfdf9;
+      }
+      .faq h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+      .faq p {
+        margin: 0;
+      }
+      @media (max-width: 720px) {
+        main { padding: 28px 16px 56px; }
+        .hero { padding: 24px 20px; }
+        .card { padding: 20px; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 19px; }
+        .faq-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>技术支持 / Support</h1>
+        <p class="sub">绿植日记 / Leaf Diary</p>
+        <p class="sub">如果你遇到问题，我们会尽量帮你快速定位 / If you run into any issue, we'll do our best to help.</p>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>联系我们</h2>
+            <p>
+              如果你在使用绿植日记时遇到提醒不弹出、照片无法保存、记录丢失、会员无法解锁等问题，欢迎随时联系我们：
+            </p>
+            <p class="contact">
+              <a href="mailto:740168305@qq.com">740168305@qq.com</a>
+            </p>
+            <p>
+              为了更快解决问题，建议在邮件里附上：
+            </p>
+            <ul>
+              <li>设备型号（例如 iPhone 15 Pro）</li>
+              <li>系统版本（例如 iOS 18）</li>
+              <li>App 版本（在「设置 → 关于」里可以看到）</li>
+              <li>问题出现时的操作步骤</li>
+              <li>相关截图或录屏（如方便）</li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Contact Us</h2>
+            <p>
+              If you run into reminders not firing, photos that won't save, missing entries, or Premium not unlocking while using Leaf Diary, feel free to contact us:
+            </p>
+            <p class="contact">
+              <a href="mailto:740168305@qq.com">740168305@qq.com</a>
+            </p>
+            <p>
+              To help us resolve the issue faster, please include:
+            </p>
+            <ul>
+              <li>Your device model (for example, iPhone 15 Pro)</li>
+              <li>Your OS version (for example, iOS 18)</li>
+              <li>The app version, which you can find in Settings, About</li>
+              <li>The steps that lead to the issue</li>
+              <li>Screenshots or a screen recording if possible</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>到时间了但没有收到提醒？</h3>
+                <p>请先确认系统通知权限已开启（设置 → 通知 → 绿植日记），再检查这条提醒里的「到期发送系统通知」开关是否打开。另外，「仅一次」的提醒完成之后就不会再提醒了。</p>
+              </div>
+              <div class="faq">
+                <h3>为什么加不了新的植物？</h3>
+                <p>免费版最多可以添加 3 株植物。删除一株就能再加一株，或者在设置页开通高级会员（永久），之后植物数量不再限制。</p>
+              </div>
+              <div class="faq">
+                <h3>提醒的时间是怎么算的？</h3>
+                <p>循环提醒按「上次完成时间 + 间隔」计算，从未打卡过则从开始日期起算；「仅一次」的提醒就直接落在你选的日期当天。</p>
+              </div>
+              <div class="faq">
+                <h3>买了会员但没有解锁？</h3>
+                <p>请到设置页点击「恢复购买」，并确认当前的 Apple ID 与购买时使用的是同一个。</p>
+              </div>
+              <div class="faq">
+                <h3>删除 App 会丢数据吗？</h3>
+                <p>会。删除 App 会清除其中的植物资料、养护记录和照片，且无法恢复，请谨慎操作。</p>
+              </div>
+              <div class="faq">
+                <h3>怎么备份我的数据？</h3>
+                <p>到「设置 → 备份」点击「导出数据」，App 会生成一个 zip 文件，你可以存到 iCloud Drive、文件 App，或者发送给自己。</p>
+              </div>
+              <div class="faq">
+                <h3>换新手机怎么迁移？</h3>
+                <p>在新手机装好 App，把之前导出的备份文件传过去，然后在「设置 → 备份 → 导入数据」里选中它即可。导入按 id 合并，不会覆盖已有内容。</p>
+              </div>
+              <div class="faq">
+                <h3>照片能导出吗？</h3>
+                <p>可以。点开任意照片进入全屏，右上角可以「保存到相册」或通过系统分享导出。图库里长按照片也有保存选项。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>FAQ</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>Why didn't I get a reminder?</h3>
+                <p>First check that notifications are allowed in Settings, Notifications, Leaf Diary, then check that the reminder's Send a notification when due switch is on. Also note that a one-time reminder stops after you complete it.</p>
+              </div>
+              <div class="faq">
+                <h3>Why can't I add another plant?</h3>
+                <p>The free version tracks up to 3 plants. You can delete one to add another, or unlock Premium (lifetime) in Settings to remove the limit entirely.</p>
+              </div>
+              <div class="faq">
+                <h3>How is the next due date calculated?</h3>
+                <p>A repeating reminder counts from the last time you completed it, plus the interval. If you have never checked it off, it counts from the start date. A one-time reminder simply falls on the date you picked.</p>
+              </div>
+              <div class="faq">
+                <h3>Premium didn't unlock after purchase?</h3>
+                <p>Tap Restore Purchases in Settings, and make sure you are signed in with the same Apple ID you used to buy it.</p>
+              </div>
+              <div class="faq">
+                <h3>Will I lose data if I delete the app?</h3>
+                <p>Yes. Deleting the app removes your plants, care entries, and photos, and it cannot be undone. Please be careful.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I back up my data?</h3>
+                <p>Go to Settings, Backup and tap Export Data. The app creates a zip file that you can save to iCloud Drive, the Files app, or send to yourself.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I move to a new phone?</h3>
+                <p>Install the app on the new phone, transfer the backup file you exported earlier, then pick it in Settings, Backup, Import Data. Import merges by ID and never overwrites what is already there.</p>
+              </div>
+              <div class="faq">
+                <h3>Can I export my photos?</h3>
+                <p>Yes. Open any photo full screen and use Save to Photos or the system share sheet in the top right. You can also long press a photo in the gallery to save it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>隐私政策</h2>
+            <p>
+              想了解我们如何处理你的植物资料、养护记录和照片，请查看
+              <a href="Plant_privacy.html">隐私政策</a>。
+            </p>
+          </div>
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Privacy Policy</h2>
+            <p>
+              To learn how we handle your plant details, care entries, and photos, please see our
+              <a href="Plant_privacy.html">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <p class="footer">© 2026 绿植日记 / Leaf Diary</p>
+    </main>
+  </body>
+</html>
