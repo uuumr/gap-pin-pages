@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>技术支持 - 玩物账本</title>
+  <meta name="description" content="《玩物账本》官方支持页面" />
+  <style>
+    :root {
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666;
+      --border: rgba(0,0,0,.08);
+      --accent: #111;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #faf8f4 0%, #f2efe8 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.15; }
+    .sub { margin: 0; color: var(--muted); font-size: 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      margin-top: 16px;
+    }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    h3 { margin: 18px 0 6px; font-size: 16px; }
+    h3:first-of-type { margin-top: 0; }
+    p { margin: 0 0 12px; }
+    ul { margin: 10px 0 0 20px; padding: 0; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    .footer { margin-top: 24px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 720px) {
+      .hero { padding: 24px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>技术支持</h1>
+      <p class="sub">给又买又卖的收藏品玩家的记账本</p>
+    </section>
+
+    <section class="card">
+      <h2>联系我们</h2>
+      <p>
+        使用中遇到问题、发现数据算错了，或者有功能建议，都欢迎发邮件给我们：
+      </p>
+      <p>
+        <a href="mailto:740168305@qq.com">740168305@qq.com</a>
+      </p>
+      <p>
+        为了更快定位问题，请尽量在邮件里说明：<br />
+        1. 设备型号（如 iPhone 15 Pro）<br />
+        2. 系统版本（如 iOS 26.0）<br />
+        3. 具体问题描述，能附截图或录屏最好
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>常见问题</h2>
+
+      <h3>换手机了，数据怎么迁移？</h3>
+      <p>
+        在旧手机打开「设置 → 导出所有数据」，会生成一个 JSON 备份文件，把它存到 iCloud 云盘或发给自己。
+        在新手机装好应用后，点「设置 → 导入数据」选择这个文件即可恢复，商品、照片、订单、库存、账单都会一起还原。
+      </p>
+
+      <h3>数据会丢吗？</h3>
+      <p>
+        所有数据只保存在本机，<strong>卸载应用会连同数据一起删除</strong>，无法找回。
+        建议每隔一段时间做一次导出备份。另外换手机、刷机之前，务必先导出。
+      </p>
+
+      <h3>补款提醒没有响？</h3>
+      <p>
+        两个地方检查一下：<br />
+        1. 系统「设置 → 通知 → 玩物账本」是否允许通知；<br />
+        2. 这条预售单是否填了「尾款截止日」——没填截止日的单子只会出现在首页，不会定时提醒。
+      </p>
+
+      <h3>预售单记完还能改吗？</h3>
+      <p>
+        可以。在「库存 → 预售中」点开那张单子，右上角有「编辑」，类型、商品、价格、付款、备注都能改。
+        改完还欠多少会自动重算。
+      </p>
+
+      <h3>同一个款买过两次，成本怎么算？</h3>
+      <p>
+        会当成两件独立的货，各算各的成本，不做平均。卖出时用你选中的那一件的成本算差价——
+        这也是这个账本和其它记账软件最大的不同。
+      </p>
+
+      <h3>照片存在哪里？会占很多空间吗？</h3>
+      <p>
+        照片会先压缩（长边不超过 1600 像素）再保存在本机，不会上传。如果你拍了很多实拍图，可以在出货后删掉不再需要的照片。
+      </p>
+
+      <h3>渠道、品相、款项能自己加吗？</h3>
+      <p>
+        都能。在「设置」里分别有「渠道」「品相」「款项」三份名单，可以增删改和拖动排序。
+        改名会同步更新已经记过的账，不用担心数据对不上。
+      </p>
+
+      <h3>要联网才能用吗？</h3>
+      <p>
+        不需要。全部功能都是离线的，飞机上、展会现场、地下室都能记。
+      </p>
+
+      <h3>收费吗？</h3>
+      <p>
+        目前所有功能都免费，不限制记账条数，也不限制商品数量。数据随时可以导出带走。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>隐私政策</h2>
+      <p>
+        <a href="wanwu_privacy.html">查看《玩物账本》隐私政策</a>
+      </p>
+    </section>
+
+    <p class="footer">© 2026 玩物账本 开发团队</p>
+  </main>
+</body>
+</html>
