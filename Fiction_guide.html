@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>使用指南 / User Guide - 腕上小说阅读器</title>
+    <meta name="description" content="腕上小说阅读器使用指南 / Wrist Novel Reader User Guide" />
+    <style>
+      :root {
+        --bg: #f6f4ef;
+        --card: #ffffff;
+        --text: #1d1d1f;
+        --muted: #68686d;
+        --border: rgba(0, 0, 0, 0.08);
+        --accent: #111111;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #faf8f4 0%, #f1eee7 100%);
+        color: var(--text);
+        line-height: 1.72;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 44px 20px 72px;
+      }
+      .hero,
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      }
+      .hero {
+        padding: 30px 28px;
+        margin-bottom: 16px;
+      }
+      .card {
+        padding: 24px;
+        margin-bottom: 14px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 34px;
+        line-height: 1.18;
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.25;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 8px 0 0 22px;
+        padding: 0;
+      }
+      li {
+        margin: 0 0 8px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .label {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .lang {
+        display: grid;
+        gap: 18px;
+      }
+      .block + .block {
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+      .contact {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .action-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
+        padding: 13px 20px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .action-link:hover {
+        text-decoration: none;
+        opacity: 0.86;
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .faq {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        background: #fcfbf8;
+      }
+      .faq h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+      .faq p {
+        margin: 0;
+      }
+      .contact-list {
+        display: grid;
+        gap: 12px;
+        margin: 14px 0 4px;
+      }
+      .contact-row {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: #fcfbf8;
+      }
+      .contact-row .name {
+        min-width: 72px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .contact-row .value {
+        font-size: 18px;
+        font-weight: 600;
+        word-break: break-all;
+      }
+      @media (max-width: 720px) {
+        main { padding: 28px 16px 56px; }
+        .hero { padding: 24px 20px; }
+        .card { padding: 20px; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 19px; }
+        .faq-grid { grid-template-columns: 1fr; }
+        .contact-row { flex-direction: column; gap: 2px; }
+        .contact-row .name { min-width: 0; }
+      }
+      .video-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        margin: 14px 0 4px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #000;
+      }
+      .video-wrap iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>使用指南 / User Guide</h1>
+        <p class="sub">腕上小说阅读器 / Wrist Novel Reader</p>
+        <p class="sub">先看视频快速上手，下面是常见问题的解决办法 / Watch the video first, then check the FAQ below.</p>
+      </section>
+
+      <section class="card">
+        <h2>使用视频 / Video</h2>
+        <p>从导入小说、同步到手表，到手表上的翻页与操作方式，都在这个视频里：</p>
+        <div class="video-wrap">
+          <iframe src="https://player.bilibili.com/player.html?bvid=BV122H66UEL5&amp;page=1&amp;danmaku=0"
+                  scrolling="no"
+                  frameborder="no"
+                  framespacing="0"
+                  allowfullscreen="true"></iframe>
+        </div>
+        <p>
+          <a class="action-link" href="https://www.bilibili.com/video/BV122H66UEL5" target="_blank" rel="noopener">▶ 在 B 站打开 / Open on Bilibili</a>
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>手表上怎么返回或调出操作按钮？</h3>
+                <p>在手表阅读页点一下屏幕左上角，就会显示返回、目录、设置等按钮；点屏幕其他位置即可收起。</p>
+              </div>
+              <div class="faq">
+                <h3>导入后没有看到小说？</h3>
+                <p>请确认文件格式为 TXT 或其他支持的文本格式，并等待首次分页完成后再打开阅读。</p>
+              </div>
+              <div class="faq">
+                <h3>手表上没有同步内容？</h3>
+                <p>请先在手机端手动同步，并确认手表 App 已打开过一次，且手机与手表处于可连接状态。</p>
+              </div>
+              <div class="faq">
+                <h3>小说太大，同步到手表后打不开或书架里没出现？</h3>
+                <p>几十 MB 的 TXT 手表可能装不下或加载不了。同步 8 MB 以上的书时建议用「后台传输」，更稳定、锁屏也能继续。</p>
+              </div>
+              <div class="faq">
+                <h3>翻页或分页很慢？</h3>
+                <p>首次打开大文件时需要先完成章节和分页整理，后续会尽量复用缓存并提升速度。</p>
+              </div>
+              <div class="faq">
+                <h3>会员购买后没有生效？</h3>
+                <p>你可以尝试点击“恢复购买”，或确保 Apple ID 登录状态与购买时一致。</p>
+              </div>
+              <div class="faq">
+                <h3>手表上怎么调字号、开自动翻页？</h3>
+                <p>先在阅读页左上角点一下调出按钮，再点右上角的齿轮进入设置，可以调整字号与行距，也可以打开「自动翻页」并设置翻页间隔。</p>
+              </div>
+              <div class="faq">
+                <h3>EPUB 怎么导入？</h3>
+                <p>选择 EPUB 文件后会先询问是否转换成 TXT，确认后自动转换并入库。转换只发生在 App 内部，不会修改你原来的 EPUB 文件，导入后按纯文本阅读。</p>
+              </div>
+              <div class="faq">
+                <h3>支持哪些文件格式？</h3>
+                <p>支持 TXT、Markdown（.md）和 EPUB（自动转换成 TXT）。带 DRM 加密的 EPUB 暂不支持。</p>
+              </div>
+              <div class="faq">
+                <h3>手机和手表的阅读进度怎么同步？</h3>
+                <p>进度同步是手动的：点书封面右上角的「⋯」按钮，可以「同步手机进度到手表」或「从手表同步进度」，也可以用书架右上角的按钮一次性同步全部小说。</p>
+              </div>
+              <div class="faq">
+                <h3>手表最多能放几本？怎么删掉？</h3>
+                <p>非会员手机最多 3 本、手表最多 1 本，开通高级会员后都不限本数。在手表书架点每本书右侧的垃圾桶图标即可移除，只会从手表删除，手机上的书不受影响。</p>
+              </div>
+            
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>FAQ</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>How do I go back or show the controls on the watch?</h3>
+                <p>Tap the top-left corner of the watch reading page to show the back, table of contents and settings buttons. Tap anywhere else to hide them.</p>
+              </div>
+              <div class="faq">
+                <h3>Why don’t I see my imported book?</h3>
+                <p>Please make sure the file is TXT or another supported text format, and wait for the first pagination pass to finish before opening it.</p>
+              </div>
+              <div class="faq">
+                <h3>Why is there no content on the watch?</h3>
+                <p>Please sync manually from iPhone first, and make sure the watch app has been opened at least once while the devices are connected.</p>
+              </div>
+              <div class="faq">
+                <h3>A large book won't open on the watch, or never shows up after syncing?</h3>
+                <p>A TXT of tens of MB may be too large for the watch to load. For books over 8 MB, background transfer is recommended — it is more reliable and keeps working while the screen is locked.</p>
+              </div>
+              <div class="faq">
+                <h3>Why is page turning or pagination slow?</h3>
+                <p>Large files need an initial chapter and pagination pass. After that, the app will try to reuse caches and improve speed.</p>
+              </div>
+              <div class="faq">
+                <h3>Why didn’t premium unlock after purchase?</h3>
+                <p>Try restoring purchases, and make sure you are signed in with the same Apple ID used for the purchase.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I change the font size or enable auto page turning on the watch?</h3>
+                <p>First tap the top-left corner of the reading page to reveal the buttons, then tap the gear icon in the top-right corner to adjust font size and line spacing, or to enable Auto Page Turn and set its interval.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I import an EPUB?</h3>
+                <p>After you pick an EPUB file, the app asks whether to convert it to TXT first. The conversion happens inside the app and never modifies your original EPUB file; the imported copy is read as plain text.</p>
+              </div>
+              <div class="faq">
+                <h3>Which file formats are supported?</h3>
+                <p>TXT, Markdown (.md) and EPUB (converted to TXT automatically). EPUB files with DRM are not supported.</p>
+              </div>
+              <div class="faq">
+                <h3>How does reading progress sync between iPhone and Apple Watch?</h3>
+                <p>Progress syncing is manual: tap the ⋯ button in the top-right corner of a book cover to sync phone progress to the watch or pull progress from the watch, or use the button at the top of the shelf to sync all books at once.</p>
+              </div>
+              <div class="faq">
+                <h3>How many books can the watch hold, and how do I delete one?</h3>
+                <p>Non-members can keep up to 3 books on the phone and 1 on the watch; Premium removes both limits. Tap the trash icon on the right of a book in the watch library to remove it — this only affects the watch, not the phone.</p>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="footer">© 2026 腕上小说阅读器 / Wrist Novel Reader</p>
+    </main>
+  </body>
+</html>
