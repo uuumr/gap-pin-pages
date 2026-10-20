@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>技术支持 / Support - 一掷 · 筊杯 Crescent Cast</title>
+    <meta name="description" content="一掷 · 筊杯技术支持 / Crescent Cast Support" />
+    <style>
+      :root {
+        --bg: #faf6ee;
+        --card: #fffdf8;
+        --text: #241a12;
+        --muted: #6f6256;
+        --border: rgba(70, 45, 20, 0.10);
+        --accent: #8f2f2f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #fffdf8 0%, #f2e9da 100%);
+        color: var(--text);
+        line-height: 1.72;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 44px 20px 72px;
+      }
+      .hero,
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(60, 35, 10, 0.05);
+      }
+      .hero {
+        padding: 30px 28px;
+        margin-bottom: 16px;
+      }
+      .card {
+        padding: 24px;
+        margin-bottom: 14px;
+      }
+      h1, h2 {
+        font-family: "Songti SC", "STSong", "Noto Serif SC", "Songti TC", Georgia, serif;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 34px;
+        line-height: 1.18;
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.25;
+      }
+      p { margin: 0 0 12px; }
+      ol, ul {
+        margin: 8px 0 0 22px;
+        padding: 0;
+      }
+      li { margin: 0 0 8px; }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .label {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .lang {
+        display: grid;
+        gap: 18px;
+      }
+      .block + .block {
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+      .contact {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .faq {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        background: #fbf7ef;
+      }
+      .faq h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        line-height: 1.35;
+        color: var(--accent);
+        font-family: "Songti SC", "STSong", "Noto Serif SC", Georgia, serif;
+      }
+      .faq p {
+        margin: 0;
+      }
+      @media (max-width: 720px) {
+        main { padding: 28px 16px 56px; }
+        .hero { padding: 24px 20px; }
+        .card { padding: 20px; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 19px; }
+        .faq-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>技术支持 / Support</h1>
+        <p class="sub">一掷 · 筊杯 / Crescent Cast</p>
+        <p class="sub">最后更新 / Last updated: 2026-10-20</p>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>联系我们</h2>
+            <p>遇到问题、发现 bug，或者想建议一个新功能，欢迎发邮件给我们。请尽量附上设备型号、iOS 版本、App 版本、复现步骤和截图。</p>
+            <p class="contact"><a href="mailto:740168305@qq.com">740168305@qq.com</a></p>
+          </div>
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Contact Us</h2>
+            <p>If you run into a problem, find a bug, or want to suggest a feature, email us. Please include your device model, iOS version, app version, steps to reproduce, and a screenshot if possible.</p>
+            <p class="contact"><a href="mailto:740168305@qq.com">740168305@qq.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>快速开始</h2>
+            <ol>
+              <li>在祈祷页长按圆环，蓄满后松手。</li>
+              <li>在签纸上写下想问的事；一次只问一件，写多写少都可以。</li>
+              <li>选择「单掷」或「三圣筊」。</li>
+              <li>等筊杯落地，轻触屏幕查看落定签纸。</li>
+              <li>结果会自动收入「签册」；之后可以补「后来呢」和答谢备忘。</li>
+            </ol>
+          </div>
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Quick Start</h2>
+            <ol>
+              <li>On the prayer screen, press and hold the ring until it is full, then release.</li>
+              <li>Write your question on the paper. One question at a time; write as much or as little as you like.</li>
+              <li>Choose Single Cast or Three Sacred Casts.</li>
+              <li>Wait for the blocks to land, then tap the screen to view the sealed result.</li>
+              <li>The result is saved to Records automatically. Add follow-up notes and a vow note later.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>怎么开始一次掷筊？</h3>
+                <p>在祈祷页长按圆环，蓄满后松手，写下来意，再选择单掷或三圣筊。</p>
+              </div>
+              <div class="faq">
+                <h3>单掷和三圣筊有什么区别？</h3>
+                <p>单掷以一次结果为准；三圣筊是同一个问题连续三次圣筊。笑筊不计入、可以再掷，阴筊即止。</p>
+              </div>
+              <div class="faq">
+                <h3>圣筊、笑筊、阴筊分别是什么意思？</h3>
+                <p>圣筊是一平一凸，表示允许；笑筊是双平，表示笑而不答，可以把问题说得更清楚；阴筊是双凸，表示否定，先停下。</p>
+              </div>
+              <div class="faq">
+                <h3>掷出笑筊或阴筊后怎么办？</h3>
+                <p>笑筊可以整理问题后再掷；阴筊不要硬掷，可以先停下，改日或换一种问法。</p>
+              </div>
+              <div class="faq">
+                <h3>记录保存在哪里？</h3>
+                <p>保存在本机的签册里，结果落定后自动保存，不会上传到服务器。</p>
+              </div>
+              <div class="faq">
+                <h3>怎么删除一条记录？</h3>
+                <p>在签册列表左滑记录并点删除，或打开签文详情后点「删除这签」。</p>
+              </div>
+              <div class="faq">
+                <h3>需要账号或网络吗？</h3>
+                <p>不需要账号，核心问事与签册功能都可以离线使用。</p>
+              </div>
+              <div class="faq">
+                <h3>怎么切换语言？</h3>
+                <p>App 跟随系统语言，支持英文、简体中文、繁体中文。可以在 iOS「设置 → 通用 → 语言与地区」里切换。</p>
+              </div>
+              <div class="faq">
+                <h3>为什么背景会变化？</h3>
+                <p>祈祷页会按本地时间切换早、中、晚场景：05:00、11:00、21:00。</p>
+              </div>
+              <div class="faq">
+                <h3>为什么听不到落地声？</h3>
+                <p>请检查媒体音量和静音键。App 使用系统音频播放，会跟随静音键，也不会录音。</p>
+              </div>
+              <div class="faq">
+                <h3>删除 App 会丢记录吗？</h3>
+                <p>会。记录只存在本机，删除 App 会清除全部签文与备注，且无法恢复。</p>
+              </div>
+              <div class="faq">
+                <h3>可以导出或备份记录吗？</h3>
+                <p>当前版本没有内置导出功能。整机备份可能包含 App 数据，取决于你的系统备份设置；我们无法访问该备份。</p>
+              </div>
+              <div class="faq">
+                <h3>结果是预测吗？</h3>
+                <p>不是。它是一个文化仪式与个人记录工具，不构成医疗、法律、投资或赌博建议，也没有下注或奖品。</p>
+              </div>
+              <div class="faq">
+                <h3>为什么结果会重复？</h3>
+                <p>App 的结果由仪式逻辑生成，不是科学预测。重点在于停下来把问题问清楚，并把答案记录下来。</p>
+              </div>
+              <div class="faq">
+                <h3>怎么反馈问题或建议功能？</h3>
+                <p>发邮件到下方邮箱，附上设备型号、iOS 版本、App 版本、复现步骤和截图，会更容易定位。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>FAQ</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>How do I start a cast?</h3>
+                <p>On the prayer screen, press and hold the ring until it is full, release, write your question, then choose Single Cast or Three Sacred Casts.</p>
+              </div>
+              <div class="faq">
+                <h3>What is the difference between Single Cast and Three Sacred Casts?</h3>
+                <p>Single Cast uses one result. Three Sacred Casts asks for three sacred results for the same question. Laughing blocks do not count and may be cast again; a yin block ends the session.</p>
+              </div>
+              <div class="faq">
+                <h3>What do Sacred, Laughing, and Yin mean?</h3>
+                <p>Sacred is one flat and one convex block: permitted. Laughing is two flat blocks: the deity smiles but does not answer, so clarify your question. Yin is two convex blocks: no; stop for now.</p>
+              </div>
+              <div class="faq">
+                <h3>What should I do after a Laughing or Yin result?</h3>
+                <p>After Laughing, clarify your question and cast again. After Yin, do not force another cast; stop, return another day, or ask in a different way.</p>
+              </div>
+              <div class="faq">
+                <h3>Where are my records stored?</h3>
+                <p>In the local Records book on your device. Results are saved automatically and are not uploaded to a server.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I delete a record?</h3>
+                <p>In Records, swipe left on a record and tap Delete, or open the record and tap Delete Record.</p>
+              </div>
+              <div class="faq">
+                <h3>Does the app need an account or internet?</h3>
+                <p>No account is needed, and the core ritual and Records work offline.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I change the language?</h3>
+                <p>The app follows your device language and supports English, Simplified Chinese, and Traditional Chinese. Change it in iOS Settings, General, Language &amp; Region.</p>
+              </div>
+              <div class="faq">
+                <h3>Why did the background change?</h3>
+                <p>The prayer scene follows local time: morning, day, and evening, changing at 05:00, 11:00, and 21:00.</p>
+              </div>
+              <div class="faq">
+                <h3>Why can't I hear the landing sound?</h3>
+                <p>Check the media volume and the silent switch. The app uses system audio playback, follows the silent switch, and does not record audio.</p>
+              </div>
+              <div class="faq">
+                <h3>Will deleting the app delete my records?</h3>
+                <p>Yes. Records are stored only on this device. Deleting the app removes all records and notes permanently.</p>
+              </div>
+              <div class="faq">
+                <h3>Can I export or back up my records?</h3>
+                <p>This version has no built-in export. A full device backup may include app data depending on your backup settings; we cannot access that backup.</p>
+              </div>
+              <div class="faq">
+                <h3>Is the result a prediction?</h3>
+                <p>No. It is a cultural ritual and personal record tool, not medical, legal, financial, or gambling advice. There are no bets or prizes.</p>
+              </div>
+              <div class="faq">
+                <h3>Why do results repeat?</h3>
+                <p>The app generates a ritual outcome, not a scientific prediction. The value is in pausing to ask clearly and keeping a record.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I report a bug or suggest a feature?</h3>
+                <p>Email us with your device model, iOS version, app version, steps to reproduce, and a screenshot if possible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>隐私政策</h2>
+            <p>想了解我们如何处理你的签文、结果和备注，请查看 <a href="Zhijiao_privacy.html">隐私政策</a>。</p>
+          </div>
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Privacy Policy</h2>
+            <p>To learn how your questions, results, and notes are handled, please see our <a href="Zhijiao_privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="footer">© 2026 一掷 · 筊杯 / Crescent Cast</p>
+    </main>
+  </body>
+</html>
