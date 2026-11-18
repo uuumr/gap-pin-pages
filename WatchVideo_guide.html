@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>使用指南 / User Guide - 腕上多媒体播放器</title>
+    <meta name="description" content="腕上多媒体播放器使用指南 / Wrist Media Player User Guide" />
+    <style>
+      :root {
+        --bg: #faf7f4;
+        --card: #ffffff;
+        --text: #1d1d1f;
+        --muted: #6d6d72;
+        --border: rgba(0, 0, 0, 0.08);
+        --accent: #d9553f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #fbf8f4 0%, #f6efee 100%);
+        color: var(--text);
+        line-height: 1.72;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 44px 20px 72px;
+      }
+      .hero,
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      }
+      .hero {
+        padding: 30px 28px;
+        margin-bottom: 16px;
+      }
+      .card {
+        padding: 24px;
+        margin-bottom: 14px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 34px;
+        line-height: 1.18;
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.25;
+      }
+      h3 {
+        margin: 22px 0 8px;
+        font-size: 17px;
+        line-height: 1.3;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 8px 0 0 22px;
+        padding: 0;
+      }
+      li {
+        margin: 0 0 8px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .label {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .lang {
+        display: grid;
+        gap: 18px;
+      }
+      .block + .block {
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .faq {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        background: #fcfbf8;
+      }
+      .faq h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+      .faq p {
+        margin: 0;
+      }
+      .steps {
+        counter-reset: step;
+        display: grid;
+        gap: 12px;
+        margin: 14px 0 4px;
+        padding: 0;
+        list-style: none;
+      }
+      .steps li {
+        position: relative;
+        margin: 0;
+        padding: 16px 18px 16px 58px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: #fcfbf8;
+        counter-increment: step;
+      }
+      .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 18px;
+        top: 15px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+      }
+      .steps strong {
+        display: block;
+        margin-bottom: 2px;
+      }
+      .action-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
+        padding: 13px 20px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .action-link:hover {
+        text-decoration: none;
+        opacity: 0.86;
+      }
+      @media (max-width: 720px) {
+        main { padding: 28px 16px 56px; }
+        .hero { padding: 24px 20px; }
+        .card { padding: 20px; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 19px; }
+        .faq-grid { grid-template-columns: 1fr; }
+        .steps li { padding: 14px 16px 14px 52px; }
+        .steps li::before { left: 14px; top: 13px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>使用指南 / User Guide</h1>
+        <p class="sub">腕上多媒体播放器 / Wrist Media Player</p>
+        <p class="sub">从导入到在手表上播放，按下面几步走就够了 / From import to playback on the watch, just follow these steps.</p>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>快速上手</h2>
+            <ol class="steps">
+              <li>
+                <strong>先在 iPhone 上导入内容</strong>
+                视频可以从“文件”或相册导入；音乐从“文件”导入；漫画支持 zip / cbz 压缩包。点右上角的“+”即可选择文件。
+              </li>
+              <li>
+                <strong>选一下画质</strong>
+                在“设置 → 压缩”里选择视频画质、音乐音质和漫画画质。默认档位适合大多数情况，觉得占空间太多就调低一档。
+              </li>
+              <li>
+                <strong>同步到手表</strong>
+                打开“同步”标签，勾选要传的内容（也可以打开“全部视频 / 全部音乐 / 全部漫画”），点右上角“开始同步”。传输过程中可以随时点“取消”中断。
+              </li>
+              <li>
+                <strong>在手表上播放</strong>
+                手表 App 里有视频、音乐、漫画三个列表，点任意一项即可开始播放或阅读。首次同步前请先打开过一次手表 App。
+              </li>
+            </ol>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Quick start</h2>
+            <ol class="steps">
+              <li>
+                <strong>Import on iPhone first</strong>
+                Videos can come from Files or Photos, music from Files, and comics from zip / cbz archives. Tap the “+” button in the top-right corner to pick files.
+              </li>
+              <li>
+                <strong>Pick a quality</strong>
+                Choose video, music and comic quality under Settings → Compression. The defaults work well; drop one step down if storage is tight.
+              </li>
+              <li>
+                <strong>Sync to the watch</strong>
+                Open the Sync tab, select what you want (or turn on All Videos / All Music / All Comics) and tap Start Sync in the top-right corner. You can stop a transfer at any time with Cancel.
+              </li>
+              <li>
+                <strong>Play it on the watch</strong>
+                The watch app has three lists — Videos, Music and Comics. Tap any item to start playing or reading. Open the watch app at least once before your first sync.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>在 iPhone 上</h2>
+
+            <h3>导入</h3>
+            <ul>
+              <li>视频：右上角“+”可以选择“从文件导入”或“从相册导入”。支持 mp4 / m4v / mov。</li>
+              <li>音乐：右上角“+”，可一次选择多个文件。支持 mp3 / m4a / aac / wav / aiff / flac。</li>
+              <li>漫画：右上角“+”，选择 zip 或 cbz 压缩包。暂不支持 rar / 7z / cbr。</li>
+            </ul>
+
+            <h3>管理内容</h3>
+            <p>
+              长按任意一条可以进入选中状态，再点其它条目可以多选，底部会出现“传输到手表 / 重命名 / 删除”三个按钮。点屏幕空白处、或者直接切换标签页都会退出选中状态。
+            </p>
+
+            <h3>传输中的状态</h3>
+            <p>
+              同步页会显示当前进度和正在处理的内容。需要中断时点右上角的“取消”，正在传的会立刻停下，已经保存到手表的内容会保留。
+            </p>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>On iPhone</h2>
+
+            <h3>Importing</h3>
+            <ul>
+              <li>Video: the “+” button offers Import from Files and Import from Photos. Supports mp4 / m4v / mov.</li>
+              <li>Music: tap “+” and pick one or more files. Supports mp3 / m4a / aac / wav / aiff / flac.</li>
+              <li>Comics: tap “+” and choose a zip or cbz archive. rar / 7z / cbr are not supported.</li>
+            </ul>
+
+            <h3>Managing items</h3>
+            <p>
+              Long press any row to enter selection mode; tap more rows to select several. A bar appears at the bottom with Send to Apple Watch, Rename and Delete. Tap empty space or switch tabs to leave selection mode.
+            </p>
+
+            <h3>While transferring</h3>
+            <p>
+              The Sync tab shows progress and what is being processed right now. Tap Cancel in the top-right corner to stop — the transfer stops immediately and anything already saved on the watch stays there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>在手表上</h2>
+            <ul>
+              <li>视频与音乐：列表里点一下开始播放，播放页可以暂停、拖动进度、切换上一个 / 下一个。</li>
+              <li>音乐后台播放：回到列表不会中断，主页底部会显示正在播放的音乐。</li>
+              <li>漫画：点开一本可以左右翻页，双指缩放页面；读完的进度会自动记住。</li>
+              <li>删除：手表列表里点每项右侧的删除按钮，只会从手表移除，手机上的文件不受影响。</li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>On Apple Watch</h2>
+            <ul>
+              <li>Videos and music: tap an item to play. The player lets you pause, scrub, and jump to the previous or next item.</li>
+              <li>Background music: going back to the list keeps the music playing, and the watch home screen shows the current track at the bottom.</li>
+              <li>Comics: tap a comic to read it, swipe to turn pages, pinch to zoom. Your reading position is remembered.</li>
+              <li>Deleting: tap the delete button on the right of an item in the watch list. This only removes it from the watch — the file on your iPhone is untouched.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>同步一直停在“正在查询手表上…”？</h3>
+                <p>说明手机还没收到手表的回包。请确认手表 App 已经打开、手机与手表距离够近，然后点右上角“取消”再重新开始同步。</p>
+              </div>
+              <div class="faq">
+                <h3>传完了但手表上没有？</h3>
+                <p>先看同步页是否显示“已完成”。如果显示完成但手表列表为空，请在手表的对应列表下拉或重开一次手表 App；仍未出现就删除该条目重新同步一次。</p>
+              </div>
+              <div class="faq">
+                <h3>为什么同步前要压缩这么久？</h3>
+                <p>视频需要先转码成手表能播放的 H.264 + AAC 格式，文件越大耗时越久。压缩只在第一次或更换画质后进行，已经压缩过的会复用结果。</p>
+              </div>
+              <div class="faq">
+                <h3>压缩会不会把画质弄得更差？</h3>
+                <p>画质由你选择的档位决定，档位越高越接近原片。App 只会压缩不会放大：如果压缩后反而更大，会自动改用原文件。</p>
+              </div>
+              <div class="faq">
+                <h3>手表空间不够怎么办？</h3>
+                <p>在手表上删除不需要的内容，或把画质调低一档后重新同步。几十 MB 以上的视频建议选 360p / 480p。</p>
+              </div>
+              <div class="faq">
+                <h3>非会员有什么限制？</h3>
+                <p>非会员手机上最多 3 个视频、3 首音乐、3 本漫画，手表上各 1 个。开通永久会员后两端都不限数量。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <span class="label">English</span>
+            <h2>FAQ</h2>
+            <div class="faq-grid">
+              <div class="faq">
+                <h3>Sync stays on “Checking what the watch already has…”</h3>
+                <p>The iPhone is waiting for a reply from the watch. Make sure the watch app is open and the devices are close together, then tap Cancel in the top-right corner and start the sync again.</p>
+              </div>
+              <div class="faq">
+                <h3>It finished transferring, but nothing shows on the watch?</h3>
+                <p>First check that the Sync tab says it completed. If it did but the watch list is empty, reopen the watch app; if the item is still missing, delete it and sync once more.</p>
+              </div>
+              <div class="faq">
+                <h3>Why does compression take so long before syncing?</h3>
+                <p>Videos must be converted to H.264 + AAC so the watch can play them, and larger files take longer. It only happens the first time or after changing quality — already prepared files are reused.</p>
+              </div>
+              <div class="faq">
+                <h3>Does compression reduce the quality?</h3>
+                <p>Quality is whatever you selected; higher tiers stay closer to the original. The app only ever shrinks — if the result would be larger, it sends the original file instead.</p>
+              </div>
+              <div class="faq">
+                <h3>What if the watch runs out of space?</h3>
+                <p>Delete what you no longer need on the watch, or pick a lower quality and sync again. For videos of tens of MB, 360p or 480p is a good choice.</p>
+              </div>
+              <div class="faq">
+                <h3>What are the free-tier limits?</h3>
+                <p>Free users can keep up to 3 videos, 3 songs and 3 comics on iPhone, and 1 of each on Apple Watch. Lifetime membership removes the limits on both devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang">
+          <div class="block">
+            <span class="label">中文</span>
+            <h2>还需要帮助？</h2>
+            <p>
+              更详细的问题排查可以看<a href="WatchVideo_support.html">技术支持页面</a>，
+              也可以直接在<a href="WatchVideo_contact.html">联系我们</a>里找到我的邮箱、QQ 和小红书。
+            </p>
+          </div>
+          <div class="block">
+            <span class="label">English</span>
+            <h2>Still need help?</h2>
+            <p>
+              More troubleshooting is on the <a href="WatchVideo_support.html">support page</a>,
+              and you can find my email, QQ and rednote on the <a href="WatchVideo_contact.html">contact page</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <p class="footer">© 2026 腕上多媒体播放器 / Wrist Media Player</p>
+    </main>
+  </body>
+</html>
