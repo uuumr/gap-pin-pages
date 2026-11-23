@@ -117,6 +117,9 @@
       .faq p {
         margin: 0;
       }
+      .faq p + p {
+        margin-top: 8px;
+      }
       @media (max-width: 720px) {
         main { padding: 28px 16px 56px; }
         .hero { padding: 24px 20px; }
@@ -141,7 +144,7 @@
             <span class="label">中文</span>
             <h2>联系我们</h2>
             <p>
-              如果你在使用腕上多媒体播放器时遇到无法导入视频或音乐、无法同步到手表、传输卡住、媒体在手表上无法播放、会员购买未生效、画面无法旋转或横屏等问题，欢迎随时联系我们：
+              如果你在使用腕上多媒体播放器时遇到无法导入视频、音乐、漫画或小说，无法同步到手表，传输卡住，媒体在手表上无法播放，小说乱码或章节错位，会员购买未生效，画面无法旋转或横屏等问题，欢迎随时联系我们：
             </p>
             <p class="contact">
               <a href="mailto:740168305@qq.com">740168305@qq.com</a>
@@ -161,7 +164,7 @@
             <span class="label">English</span>
             <h2>Contact Us</h2>
             <p>
-              If you experience import failures for video or music, watch sync issues, stalled transfers, media not playing on the watch, membership not unlocking, or problems rotating the picture while using Wrist Media Player, feel free to contact us:
+              If you experience import failures for video, music, comics or books, watch sync issues, stalled transfers, media not playing on the watch, garbled text or broken chapters while reading, membership not unlocking, or problems rotating the picture while using Wrist Media Player, feel free to contact us:
             </p>
             <p class="contact">
               <a href="mailto:740168305@qq.com">740168305@qq.com</a>
@@ -218,8 +221,24 @@
                 <p>watchOS 不允许 App 用自带的扬声器播放音乐和视频声音，必须连接蓝牙耳机。先在手表“设置 → 蓝牙”配对耳机，或直接戴上已配对过的耳机再开始播放，声音会自动切换到耳机。</p>
               </div>
               <div class="faq">
+                <h3>支持哪些小说格式？</h3>
+                <p>支持 txt / md / epub。epub 会在导入时转成带章节的 txt（原文件不改动）；纯文本编码自动识别 UTF-8 和 GB18030，中文小说常见的乱码问题基本不会遇到。单个文件超过 10 MB 会在导入前提示。</p>
+              </div>
+              <div class="faq">
+                <h3>在手表上怎么读小说？</h3>
+                <p>点开书籍即可阅读：轻点屏幕下方翻到下一页，轻点上方三分之一翻回上一页，也可以转动数码表冠翻页。点左上角呼出控制层，里面有目录、阅读设置和进度；阅读设置里可以调字号、翻页方式（分页 / 滚动）、自动翻页、表冠反馈、主题颜色和行距。主题里的“纯黑”在 OLED 屏幕上最省电。</p>
+              </div>
+              <div class="faq">
+                <h3>小说显示乱码或章节对不上？</h3>
+                <p>先确认文件本身是 txt / md / epub。乱码通常是文件使用了少见的编码（如 Big5），可以转成 UTF-8 后重新导入。章节对不上多见于没有“第 X 章”标题的书，此时全篇会当作一章并按 2 万字分段。</p>
+              </div>
+              <div class="faq">
+                <h3>设置里看不到会员价格？</h3>
+                <p>价格来自 App Store，首次打开会短暂显示“正在获取价格…”。如果显示“暂时无法获取会员商品信息”，点下方的“重新获取商品信息”即可重试；仍失败多为网络或商店区域问题，稍后再试或检查网络。</p>
+              </div>
+              <div class="faq">
                 <h3>非会员数量限制是多少？</h3>
-                <p>非会员在手机上最多 3 个视频、3 首音乐和 1 本漫画，手表上最多 1 个视频、1 首音乐和 1 本漫画；小说不限数量。开通永久会员后手机与手表均不限数量。</p>
+                <p>非会员在手机上最多 5 个视频、5 首音乐、5 本漫画和 5 本小说，手表上各 1 个。开通永久会员后手机与手表均不限数量。</p>
               </div>
               <div class="faq">
                 <h3>会员购买后没有生效？</h3>
@@ -265,8 +284,24 @@
                 <p>watchOS does not let apps play music or video audio through the built-in speaker — Bluetooth headphones are required. Pair them in Settings → Bluetooth on the watch, or put on headphones that are already paired and start playback; audio switches to them automatically.</p>
               </div>
               <div class="faq">
+                <h3>Which book formats are supported?</h3>
+                <p>txt / md / epub. An epub is converted at import into a chaptered txt (the original file is untouched). Text encoding is detected automatically, so both UTF-8 and GB18030 (common for Chinese novels) decode correctly. Files over 10 MB are flagged before importing.</p>
+              </div>
+              <div class="faq">
+                <h3>How do I read a book on the watch?</h3>
+                <p>Tap a book to open it: tap the lower part of the screen for the next page, the top third for the previous one, or turn the Digital Crown. The top-left corner opens the controls, with contents, reading settings and progress. Reading settings cover type size, page mode (paged / scroll), auto page turn, crown haptics, theme and line spacing — the Pure black theme is the most power-efficient on an OLED watch.</p>
+              </div>
+              <div class="faq">
+                <h3>Garbled text, or chapters that do not line up?</h3>
+                <p>First check the file really is txt / md / epub. Garbled text usually means an unusual encoding (Big5, for example) — convert it to UTF-8 and import again. Missing chapter breaks are normal for books without “Chapter X” headings: the whole text becomes one chapter, split every 20,000 characters.</p>
+              </div>
+              <div class="faq">
+                <h3>Why can't I see a membership price?</h3>
+                <p>The price comes from the App Store, so it may briefly show “Fetching price…”. If it says the product cannot be fetched right now, tap “Retry product info” underneath; repeated failures are usually a network or storefront issue, so check your connection and try again later.</p>
+              </div>
+              <div class="faq">
                 <h3>What are the free-tier limits?</h3>
-                <p>Free users can keep up to 3 videos, 3 songs and 1 comic on iPhone, and 1 of each on Apple Watch; books are unlimited. Lifetime membership removes the limits on both devices.</p>
+                <p>Free users can keep up to 5 videos, 5 songs, 5 comics and 5 books on iPhone, and 1 of each on Apple Watch. Lifetime membership removes the limits on both devices.</p>
               </div>
               <div class="faq">
                 <h3>Why didn't membership unlock after purchase?</h3>
