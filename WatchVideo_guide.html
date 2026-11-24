@@ -173,6 +173,28 @@
         text-decoration: none;
         opacity: 0.86;
       }
+      .video-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        margin: 14px 0 6px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #000;
+      }
+      .video-wrap iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .video-note {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
       @media (max-width: 720px) {
         main { padding: 28px 16px 56px; }
         .hero { padding: 24px 20px; }
@@ -191,6 +213,22 @@
         <h1>使用指南 / User Guide</h1>
         <p class="sub">腕上多媒体播放器 / Wrist Media Player</p>
         <p class="sub">从导入到在手表上播放，按下面几步走就够了 / From import to playback on the watch, just follow these steps.</p>
+      </section>
+
+      <section class="card">
+        <h2>使用视频 / Video</h2>
+        <p>从导入、选择画质，到同步到手表再到手表上的播放与阅读，完整操作都在这个视频里：</p>
+        <div class="video-wrap">
+          <iframe src="https://player.bilibili.com/player.html?bvid=BV17E1FzFEKy&amp;page=1&amp;danmaku=0"
+                  scrolling="no"
+                  frameborder="no"
+                  framespacing="0"
+                  allowfullscreen="true"></iframe>
+        </div>
+        <p>
+          <a class="action-link" href="https://www.bilibili.com/video/BV17E1FzFEKy" target="_blank" rel="noopener">▶ 在 B 站打开 / Open on Bilibili</a>
+        </p>
+        <p class="video-note">没有装 B 站也能看，视频直接在页面里播放。 / Plays right here — no Bilibili app needed.</p>
       </section>
 
       <section class="card">
